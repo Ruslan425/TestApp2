@@ -1,4 +1,13 @@
 <resources>
     <string name="app_name">TestApp2</string>
     <string name="button">Button</string>
+    <string name="answer">Тут ответы</string>
+    <string name="_1">1</string>
+    <string name="_2">2</string>
+    <string name="first">Первая и четвертая</string>
+    <string name="_2and3">Вторая и третья</string>
+    <string name="_3">3</string>
+    <string name="_4">4</string>
+    <string name="_5">5</string>
+    <string name="textview">TextView</string>
 </resources>
