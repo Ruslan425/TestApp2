@@ -1,4 +1,4 @@
-package ru.romazanov.java;
+package ru.romazanov.java.task1;
 
 import android.text.BoringLayout;
 
