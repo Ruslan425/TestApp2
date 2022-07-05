@@ -10,19 +10,19 @@ public class Employee {
     public String pay = "Undefined";
 
     public Employee(
-            String n,
-            String a,
-            String j,
-            String e,
-            String p,
-            String m
+            String name,
+            String age,
+            String jodTitle,
+            String email,
+            String phoneNumber,
+            String pay
     ) {
-        name = n;
-        age = a;
-        jobTitle = j;
-        email = e;
-        phoneNumber = p;
-        pay = m;
+        this.name = name;
+        this.age = age;
+        this.jobTitle = jodTitle;
+        this.email = email;
+        this.phoneNumber = phoneNumber;
+        this.pay = pay;
     }
 
     public Employee() {

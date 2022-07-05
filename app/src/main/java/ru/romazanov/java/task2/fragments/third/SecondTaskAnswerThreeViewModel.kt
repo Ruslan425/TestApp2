@@ -1,18 +1,15 @@
 package ru.romazanov.java.task2.fragments.third
 
-import android.content.Context
 import androidx.lifecycle.ViewModel
-import ru.romazanov.java.task2.DataRepositoryFactory
+import ru.romazanov.java.task2.RepositoryFactory
 import ru.romazanov.java.task2.examples.model.Matrix
-import java.util.ArrayList
+
 
 class SecondTaskAnswerThreeViewModel : ViewModel() {
 
-    private val data = DataRepositoryFactory().dataRepository
+    private val data = RepositoryFactory().create()
 
     private val matrix: Matrix = data.matrix
-
-
 
     fun getArray(str: String): ArrayList<Int> {
         return matrix.getArray(str)

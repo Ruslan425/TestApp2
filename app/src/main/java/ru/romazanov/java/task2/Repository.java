@@ -9,7 +9,7 @@ import ru.romazanov.java.task2.examples.model.Dog;
 import ru.romazanov.java.task2.examples.model.Employee;
 import ru.romazanov.java.task2.examples.model.Plate;
 
-public class DataRepository {
+public class Repository {
 
     public ArrayList<Employee> employeeArrayList = new ArrayList();
     public Employee getEmploy(

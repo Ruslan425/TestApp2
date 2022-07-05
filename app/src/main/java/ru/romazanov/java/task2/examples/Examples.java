@@ -4,19 +4,19 @@ public class Examples {
 
     public static void main(String[] args) throws MyException {
 
-        Vaz v = new Vaz();
-        v.name = "";
+        Vaz vazObject = new Vaz();
+        vazObject.name = "";
 
-        Vag vg = new Vag();
-        v.fuel();
+        Vag vagObject = new Vag();
+        vazObject.fuel();
 
-        ExceptionExample a = new ExceptionExample();
+        ExceptionExample exceptionExample = new ExceptionExample();
 
-        int age = a.example("fdf"); // Ошибка и вернет 0
+        int age = exceptionExample.example("fdf"); // Ошибка и вернет 0
 
-        int age2 = a.example("2"); // Вернет 2
+        int age2 = exceptionExample.example("2"); // Вернет 2
 
-        int age3 = a.example("-2");  // Ошибка
+        int age3 = exceptionExample.example("-2");  // Ошибка
 
     }
 }
@@ -45,7 +45,7 @@ class Encapsulation {
 }
 
 // Наследование и полиморфизм. Абстракция сюда тоже подходит :)
-abstract class Avto {
+abstract class Auto {
     String engine;
     String name;
     String color;
@@ -55,7 +55,7 @@ abstract class Avto {
 }
 
 // Класссы наследники имеют те же поля что и родитель
-class Vaz extends Avto {
+class Vaz extends Auto {
     void speed() {
         System.out.println("Макс скорость 100");
     }
@@ -66,7 +66,7 @@ class Vaz extends Avto {
     }
 }
 
-class Vag extends Avto {
+class Vag extends Auto {
     void speed() {
         System.out.println("Макс скорость 150");
     }

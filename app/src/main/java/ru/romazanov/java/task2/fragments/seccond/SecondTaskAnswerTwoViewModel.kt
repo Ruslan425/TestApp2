@@ -2,12 +2,12 @@ package ru.romazanov.java.task2.fragments.seccond
 
 import androidx.lifecycle.ViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
-import ru.romazanov.java.task2.DataRepositoryFactory
+import ru.romazanov.java.task2.RepositoryFactory
 
 
 class SecondTaskAnswerTwoViewModel : ViewModel() {
 
-    private val data = DataRepositoryFactory().dataRepository
+    private val data = RepositoryFactory().create()
 
     private val _dogList = MutableStateFlow(data.dogList)
     val dogList = _dogList
