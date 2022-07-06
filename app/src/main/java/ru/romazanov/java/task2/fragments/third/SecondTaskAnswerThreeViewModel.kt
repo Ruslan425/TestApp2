@@ -1,7 +1,7 @@
 package ru.romazanov.java.task2.fragments.third
 
 import androidx.lifecycle.ViewModel
-import ru.romazanov.java.task2.RepositoryFactory
+import ru.romazanov.java.RepositoryFactory
 import ru.romazanov.java.task2.examples.model.Matrix
 
 

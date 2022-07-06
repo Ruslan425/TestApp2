@@ -13,6 +13,9 @@
         <action
             android:id="@+id/action_startFragment_to_secondTaskFragment"
             app:destination="@id/secondTaskFragment" />
+        <action
+            android:id="@+id/action_startFragment_to_fourthTask"
+            app:destination="@id/fourthTask" />
     </fragment>
     <fragment
         android:id="@+id/secondTaskFragment"
@@ -44,4 +47,9 @@
         android:name="ru.romazanov.java.task2.fragments.third.SecondTaskAnswerThree"
         android:label="@string/example"
         tools:layout="@layout/fragment_second_task_answer_three" />
+    <fragment
+        android:id="@+id/fourthTask"
+        android:name="ru.romazanov.java.task4.fragment.FourthTask"
+        android:label="Задание четвертое"
+        tools:layout="@layout/fragment_fourth_task" />
 </navigation>

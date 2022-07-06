@@ -2,7 +2,7 @@ package ru.romazanov.java.task2.fragments.seccond
 
 import androidx.lifecycle.ViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
-import ru.romazanov.java.task2.RepositoryFactory
+import ru.romazanov.java.RepositoryFactory
 
 
 class SecondTaskAnswerTwoViewModel : ViewModel() {

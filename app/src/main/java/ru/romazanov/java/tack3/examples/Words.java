@@ -1,6 +1,7 @@
 package ru.romazanov.java.tack3.examples;
 
 
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -43,7 +44,6 @@ public class Words {
             System.out.println(word);
         }
     }
-
 
     // Посчитал сколько раз встречается каждое слово.
     public void countWords() {
