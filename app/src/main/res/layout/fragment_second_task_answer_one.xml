@@ -1,0 +1,144 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ru.romazanov.java.task2.fragments.first.SecondTaskAnswerOne">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/nameEdit"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="48dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="name"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:padding="8.dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/ageEdit"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="96dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="age"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:padding="8.dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/jobTitleEdit"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="144dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="jobTitle "
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:padding="8.dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/emaiEdit"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="192dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="email"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:padding="8.dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/phoneEdit"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="240dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="phone"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:padding="8.dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/payEdit"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="288dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="pay"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:padding="8.dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/addNewEmployee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Добавить"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.945"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nameEdit"
+            app:layout_constraintVertical_bias="0.417" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="Список"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="413dp"
+            android:layout_height="342dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.077"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            tools:listitem="@layout/item_element" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
