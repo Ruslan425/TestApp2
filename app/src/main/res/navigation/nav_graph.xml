@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/startFragment">
+
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="ru.romazanov.testapp2.StartFragment"
+        android:label="Меню выбора"
+        tools:layout="@layout/fragment_start" >
+        <action
+            android:id="@+id/action_startFragment_to_secondTaskFragment"
+            app:destination="@id/secondTaskFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/secondTaskFragment"
+        android:name="ru.romazanov.java.task2.fragments.SecondTaskFragment"
+        android:label="Второе задание"
+        tools:layout="@layout/fragment_second_task" >
+        <action
+            android:id="@+id/action_secondTaskFragment_to_secondTaskAnswerOne"
+            app:destination="@id/secondTaskAnswerOneFragment" />
+        <action
+            android:id="@+id/action_secondTaskFragment_to_secondTaskAnswerTwo"
+            app:destination="@id/secondTaskAnswerTwo" />
+        <action
+            android:id="@+id/action_secondTaskFragment_to_secondTaskAnswerThree"
+            app:destination="@id/secondTaskAnswerThree" />
+    </fragment>
+    <fragment
+        android:id="@+id/secondTaskAnswerOneFragment"
+        android:name="ru.romazanov.java.task2.fragments.first.SecondTaskAnswerOne"
+        android:label="@string/example"
+        tools:layout="@layout/fragment_second_task_answer_one" />
+    <fragment
+        android:id="@+id/secondTaskAnswerTwo"
+        android:name="ru.romazanov.java.task2.fragments.seccond.SecondTaskAnswerTwo"
+        android:label="@string/example"
+        tools:layout="@layout/fragment_second_task_answer_two" />
+    <fragment
+        android:id="@+id/secondTaskAnswerThree"
+        android:name="ru.romazanov.java.task2.fragments.third.SecondTaskAnswerThree"
+        android:label="@string/example"
+        tools:layout="@layout/fragment_second_task_answer_three" />
+</navigation>
