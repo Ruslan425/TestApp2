@@ -17,4 +17,5 @@
     <string name="example">Пример</string>
     <string name="name_field">Имя: </string>
     <string name="email">Email:</string>
+    <string name="fourth_task">Четвертое задание</string>
 </resources>

@@ -25,6 +25,10 @@ class StartFragment : Fragment(R.layout.fragment_start) {
         binding.toTask2.setOnClickListener {
             findNavController().navigate(R.id.action_startFragment_to_secondTaskFragment)
         }
+
+        binding.toTask4.setOnClickListener {
+            findNavController().navigate(R.id.action_startFragment_to_fourthTask)
+        }
     }
 
 }

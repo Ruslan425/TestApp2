@@ -1,4 +1,4 @@
-package ru.romazanov.java.task2;
+package ru.romazanov.java;
 
 import java.util.ArrayList;
 
@@ -8,6 +8,7 @@ import ru.romazanov.java.task2.examples.model.Cat;
 import ru.romazanov.java.task2.examples.model.Dog;
 import ru.romazanov.java.task2.examples.model.Employee;
 import ru.romazanov.java.task2.examples.model.Plate;
+import ru.romazanov.java.task4.Multithreading;
 
 public class Repository {
 
@@ -41,5 +42,7 @@ public class Repository {
     public Plate plate = new Plate();
 
     public Matrix matrix = new Matrix();
+
+    public Multithreading multithreading = new Multithreading();
 
 }

@@ -1,5 +1,4 @@
-package ru.romazanov.java.task2;
-
+package ru.romazanov.java;
 
 
 public class RepositoryFactory {
